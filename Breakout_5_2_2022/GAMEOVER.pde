@@ -1,4 +1,5 @@
 void gameover () {
+  theme.pause();
   gameover.play ();
   background (0);
   strokeWeight (1);
@@ -74,6 +75,7 @@ void gameover () {
     vy = random (-5, 5);
     paddlex = width/2;
     score = 0;
+    lives = 3;
     int i = 0;
     while (i < n)  {
       alive [i] =  true;

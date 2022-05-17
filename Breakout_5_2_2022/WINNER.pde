@@ -1,6 +1,4 @@
 void winner () {
-  gameover.play ();
-  
   //castle background
   rectMode (CORNER);
   background (196, 246, 255);
@@ -84,6 +82,7 @@ void winnerClicks () {
     vy = random (-5, 5);
     paddlex = width/2;
     score = 0;
+    lives = 3;
     int i = 0;
     while (i < n)  {
       alive [i] =  true;

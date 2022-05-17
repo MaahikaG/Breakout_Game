@@ -70,6 +70,8 @@ void game () {
   
   //switching to gameover
   if (bally > height + 20) {
+    bump.play ();
+    bump.rewind ();
     if (lives == 1) {
       mode = GAMEOVER;
       bally = -20;

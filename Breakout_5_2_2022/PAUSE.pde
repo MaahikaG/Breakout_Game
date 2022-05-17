@@ -6,6 +6,7 @@ void pause () {
 }
  void pauseClicks () {
    if (mouseX > 15 && mouseX < 65 && mouseY > 30 && mouseY < 70) {
+    theme.play ();
     mode = GAME;
   }
  }

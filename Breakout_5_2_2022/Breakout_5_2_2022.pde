@@ -12,7 +12,7 @@ import ddf.minim.ugens.*;
 
 // sound variables
 Minim minim;
-AudioPlayer theme, coin, gameover;
+AudioPlayer theme, coin, gameover, bump;
 
 int mode;
 final int INTRO = 0;
@@ -149,6 +149,7 @@ void setup () {
   theme = minim.loadFile("mario bros theme copy 2.mp3");
   coin = minim.loadFile("coin copy 2.wav");
   gameover = minim.loadFile("gameover copy 2.wav");
+  bump = minim.loadFile("bump copy 2.wav");
 }
 
 void draw () {
